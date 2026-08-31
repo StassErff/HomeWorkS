@@ -1,15 +1,75 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+// Переменные и синтаксис
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        // Задача 1
+        var dog = 8.0;
+        var cat = 3.6;
+        var paper = 763_789;
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        System.out.println(dog);
+        System.out.println(cat);
+        System.out.println(paper);
+
+        // Задача 2
+        dog = dog + 4;
+        cat = cat + 4;
+        paper = paper + 4;
+
+        System.out.println(dog);
+        System.out.println(cat);
+        System.out.println(paper);
+
+        // Задача 3
+        dog = dog - 3.5;
+        cat = cat - 1.6;
+        paper = paper - 7639;
+
+        System.out.println(dog);
+        System.out.println(cat);
+        System.out.println(paper);
+
+        // Задача 4
+        var friend = 19;
+        System.out.println(friend);
+
+        friend = friend + 2;
+        System.out.println(friend);
+
+        friend = friend / 7;
+        System.out.println(friend);
+
+        // Задача 5
+        var frog = 3.5;
+        System.out.println(frog);
+
+        frog = frog * 10;
+        System.out.println(frog);
+
+        frog = frog / 3.5;
+        System.out.println(frog);
+
+        frog = frog + 4;
+        System.out.println(frog);
+
+        // Задача 6
+        var bokser1 = 78.2;
+        var bokser2 = 82.7;
+
+        var totalWeight = bokser1 + bokser2;
+        System.out.println(totalWeight);
+
+        var difWeight = bokser2 - bokser1;
+        System.out.println(difWeight);
+
+        // Задача 7
+        var remainsWeight = bokser2 % bokser1;
+        System.out.println(remainsWeight);
+
+        // Задача 8
+        var hours = 640;
+        var workHours = 8;
+
+        var worker = hours / workHours;
+        System.out.println(worker);
     }
 }
