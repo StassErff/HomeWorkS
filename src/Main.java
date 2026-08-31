@@ -141,8 +141,9 @@ class HomeWork2 {
         int iceCream = 100 * 2;
         int eggs = 70 * 4;
 
-        float breakfast = (banana + milk + iceCream + eggs) / 1000f;
-        System.out.println(breakfast);
+        float breakfastGr = banana + milk + iceCream + eggs
+        float breakfastKg = breakfastGr / 1000f;
+        System.out.println(breakfastGr + breakfastKg);
 
         // Задание 7
         int loseWeight = 7000;
