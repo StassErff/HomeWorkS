@@ -94,7 +94,7 @@ class HomeWork2 {
         System.out.println("Значение переменной weight с типом double равно " + weight);
 
         // Задание 2
-        float prise = 27.12f;
+        double prise = 27.12f;
         long radius = 987_678_965_549L;
         float bingo = 2.786f;
         short car = 569;
@@ -141,16 +141,16 @@ class HomeWork2 {
         int iceCream = 100 * 2;
         int eggs = 70 * 4;
 
-        float breakfastGr = banana + milk + iceCream + eggs
+        float breakfastGr = banana + milk + iceCream + eggs;
         float breakfastKg = breakfastGr / 1000f;
-        System.out.println(breakfastGr + breakfastKg);
+        System.out.println(breakfastGr + " - вес в граммах, " + breakfastKg + " - вес в килограммах.");
 
         // Задание 7
         int loseWeight = 7000;
         int day250gr = loseWeight / 250;
         int day500gr = loseWeight / 500;
         int dayOnAverage = (day250gr + day500gr) / 2;
-        System.out.println(dayOnAverage);
+        System.out.println(day250gr + " дней, " + day500gr + " дней, " + dayOnAverage + " дней в среднем");
 
         // Задание 8
         int masha = 67_760;
