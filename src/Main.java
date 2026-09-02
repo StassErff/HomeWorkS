@@ -178,3 +178,110 @@ class HomeWork2 {
         System.out.println("Кристина теперь получает " + kristinaNew + " рублей. Годовой доход вырос на " + kristinaSalaryDif + " рублей");
     }
 }
+
+// Условные операторы: if и else
+class HomeWork3 {
+    public static void main(String[] args) {
+
+        // Задача 1
+        int age = 36;
+
+        if (age >= 18) {
+            System.out.println("Если возраст человека равен " + age + " он совершеннолетний");
+        }
+
+        if (age < 18) {
+            System.out.println("Если возраст человека равен " + age + " он не достиг совершеннолетия, нужно немного подождать");
+        }
+
+        // Задача 2
+        int temp = 0;
+
+        if (temp >= 5) {
+            System.out.println("На улице " + temp + " градусов, нужно надеть шапку");
+        }
+
+        if (temp < 5) {
+            System.out.println("На улице " + temp + " градусов, можно идти без шапки");
+        }
+
+        // Задача 3
+        int speed = 87;
+
+        if (speed >= 60) {
+            System.out.println("Если скорость " + speed + ", то придется заплатить штраф");
+        }
+
+        if (speed < 60) {
+            System.out.println("Если скорость " + speed + ", то можно ездить спокойно");
+        }
+
+        // Задача 4
+        int age4 = 21;
+
+        if (age4 >= 2 && age4 <= 6) {
+            System.out.println("Если возраст человека равен " + age4 + ", то ему нужно ходить в детский сад");
+        }
+
+        if (age4 >= 7 && age4 <= 17) {
+            System.out.println("Если возраст человека равен " + age4 + ", то ему нужно ходить в школу");
+        }
+
+        if (age4 >= 18 && age4 <= 24) {
+            System.out.println("Если возраст человека равен " + age4 + ", то его место в университете");
+        }
+
+        if (age4 > 24) {
+            System.out.println("Если возраст человека равен " + age4 + ", то ему пора ходить на работу");
+        }
+
+        // Задача 5
+        int age5 = 21;
+
+        if (age5 < 5) {
+            System.out.println("Если ребенку " + age5 + ", то он не может кататься на аттракционе");
+        }
+
+        if (age5 >= 5 && age5 <= 14) {
+            System.out.println("Если ребенку " + age5 + ", то он может кататься только в сопровождении взрослого. Если взрослого нет, то кататься нельзя");
+        }
+
+        if (age5 > 14) {
+            System.out.println("Если ребенку " + age5 + ", то он может кататься без сопровождения взрослого");
+        }
+
+        // Задача 6
+        int sitSeat = 76;
+        int standSeat = 34;
+
+        if (sitSeat < 60) {
+            System.out.println("В вагоне есть " + (60 - sitSeat) + " сидячих мест");
+        }
+
+        if (standSeat < 42) {
+            System.out.println("В вагоне есть " + (42 - standSeat) + " стоячих мест");
+        }
+
+        else {
+            System.out.println("Вагон уже полностью забит");
+        }
+
+        // Задача 7
+        int one = 1;
+        int two = 2;
+        int three = 3;
+
+        if (one < two) {
+            if (two < three) {
+                System.out.println("Большее число " + three);
+            }
+            if (three < two) {
+                System.out.println("Большее число " + two);
+
+            }
+        }
+        else {
+            System.out.println("Большее число " + one);
+        }
+    }
+}
