@@ -274,7 +274,7 @@ class HomeWork3 {
         if (one >= two && one >= three) {
             System.out.println("Большее число " + one);
         }
-        if (two >= one && two >= three) {
+        else if (two >= one && two >= three) {
             System.out.println("Большее число " + two);
         }
         else {
