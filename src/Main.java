@@ -267,14 +267,14 @@ class HomeWork3 {
         }
 
         // Задача 7
-        int one = 1;
-        int two = 2;
+        int one = 3;
+        int two = 3;
         int three = 3;
 
         if (one >= two && one >= three) {
             System.out.println("Большее число " + one);
         }
-        if (two >= one && two >= three) {
+        else if (two >= one && two >= three) {
             System.out.println("Большее число " + two);
         }
         else {
