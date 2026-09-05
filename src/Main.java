@@ -190,18 +190,18 @@ class HomeWork3 {
             System.out.println("Если возраст человека равен " + age + " он совершеннолетний");
         }
 
-        if (age < 18) {
+        else {
             System.out.println("Если возраст человека равен " + age + " он не достиг совершеннолетия, нужно немного подождать");
         }
 
         // Задача 2
         int temp = 0;
 
-        if (temp >= 5) {
+        if (temp <= 5) {
             System.out.println("На улице " + temp + " градусов, нужно надеть шапку");
         }
 
-        if (temp < 5) {
+        else {
             System.out.println("На улице " + temp + " градусов, можно идти без шапки");
         }
 
@@ -212,7 +212,7 @@ class HomeWork3 {
             System.out.println("Если скорость " + speed + ", то придется заплатить штраф");
         }
 
-        if (speed < 60) {
+        else {
             System.out.println("Если скорость " + speed + ", то можно ездить спокойно");
         }
 
@@ -271,17 +271,14 @@ class HomeWork3 {
         int two = 2;
         int three = 3;
 
-        if (one < two) {
-            if (two < three) {
-                System.out.println("Большее число " + three);
-            }
-            if (three < two) {
-                System.out.println("Большее число " + two);
-
-            }
+        if (one >= two && one >= three) {
+            System.out.println("Большее число " + one);
+        }
+        if (two >= one && two >= three) {
+            System.out.println("Большее число " + two);
         }
         else {
-            System.out.println("Большее число " + one);
+            System.out.println("Большее число " + three);
         }
     }
 }
