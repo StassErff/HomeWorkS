@@ -309,13 +309,18 @@ class HomeWork4 {
 
         // Задание 3
         int year = 2021;
-        boolean leapYear = year % 4 == 0 && year >= 1584;
-        boolean leapYear2 = year % 100 != 0 || year % 400 == 0;
 
-        if (leapYear && leapYear2) {
-            System.out.println(year + " год является високосным");
+        if (year <= 1584) {
+            System.out.println("Год должен быть больше 1584");
         } else {
-            System.out.println(year + " год не является високосным");
+            boolean leapYear = year % 4 == 0;
+            boolean leapYear2 = year % 100 != 0 || year % 400 == 0;
+
+            if (leapYear && leapYear2) {
+                System.out.println(year + " год является високосным");
+            } else {
+                System.out.println(year + " год не является високосным");
+            }
         }
 
         // Задание 4
