@@ -413,7 +413,7 @@ class HomeWork5 {
         // Задача 5
         for (int year = 1904; year <= 2096; year += 4) {
             if (year % 100 != 0 || year % 400 == 0) {
-                System.out.println(year + "год является високосным");
+                System.out.println(year + " год является високосным");
             }
         }
 
