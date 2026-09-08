@@ -431,7 +431,7 @@ class HomeWork5 {
         int many = 29000;
         int total = 0;
 
-        for (int m = 1; m < 12; m++) {
+        for (int m = 1; m <= 12; m++) {
             total += many;
             System.out.println("Месяц " + m + ", сумма накоплений равна " + total + " рублей");
         }
