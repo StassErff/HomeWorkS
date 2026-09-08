@@ -441,8 +441,8 @@ class HomeWork5 {
         int total2 = 0;
 
         for (int m = 1; m < 12; m++) {
-            total2 += many2;
             total2 += total2 / 100;
+            total2 += many2;
             System.out.println("Месяц " + m + ", сумма накоплений равна " + total2 + " рублей");
         }
 
