@@ -386,3 +386,73 @@ class HomeWork4 {
         }
     }
 }
+
+// Циклы: for
+class HomeWork5 {
+    public static void main(String[] args) {
+        // Задача 1
+        for (int num = 1; num <= 10; num++) {
+            System.out.println(num);
+        }
+
+        // Задача 2
+        for (int num = 10; num >= 1; num--) {
+            System.out.println(num);
+        }
+
+        // Задача 3
+        for (int num = 0; num <= 17; num += 2) {
+            System.out.println(num);
+        }
+
+        // Задача 4
+        for (int num = 10; num >= -10; num--) {
+            System.out.println(num);
+        }
+
+        // Задача 5
+        for (int year = 1904; year <= 2096; year += 4) {
+            if (year % 100 != 0 || year % 400 == 0) {
+                System.out.println(year + " год является високосным");
+            }
+        }
+
+        // Задача 6
+        for (int num = 7; num <= 98; num += 7) {
+            System.out.println(num);
+        }
+
+        // Задача 7
+        for (int num = 1; num <= 512; num *= 2) {
+            System.out.println(num);
+        }
+
+        // Задача 8
+        int many = 29000;
+        int total = 0;
+
+        for (int m = 1; m <= 12; m++) {
+            total += many;
+            System.out.println("Месяц " + m + ", сумма накоплений равна " + total + " рублей");
+        }
+
+        // Задача 9
+        int many2 = 29000;
+        int total2 = 0;
+
+        for (int m = 1; m < 12; m++) {
+            total2 += total2 / 100;
+            total2 += many2;
+            System.out.println("Месяц " + m + ", сумма накоплений равна " + total2 + " рублей");
+        }
+
+        // Задача 10
+        int num2 = 2;
+        int multiply = 1;
+
+        for (int i = 1; i <= 10; i++){
+            multiply = i * 2;
+            System.out.println(num2 + "*" + i + "=" + multiply);
+        }
+    }
+}
