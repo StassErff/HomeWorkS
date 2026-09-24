@@ -440,7 +440,7 @@ class HomeWork5 {
         int many2 = 29000;
         int total2 = 0;
 
-        for (int m = 1; m < 12; m++) {
+        for (int m = 1; m <= 12; m++) {
             total2 += total2 / 100;
             total2 += many2;
             System.out.println("Месяц " + m + ", сумма накоплений равна " + total2 + " рублей");
@@ -454,5 +454,104 @@ class HomeWork5 {
             multiply = i * 2;
             System.out.println(num2 + "*" + i + "=" + multiply);
         }
+    }
+}
+// Циклы: while и do-while
+class HomeWork6 {
+    public static void main(String[] args) {
+        // Задача 1
+        int firstFriday = 2;
+
+        for (int day = 1; day <= 31; day++) {
+            if ((day - firstFriday) % 7 == 0) {
+                System.out.println("Сегодня пятница, " + day + "-е число. Необходимо подготовить отчет");
+            }
+        }
+
+        // Задача 2
+        int totalDistance = 42_195;
+        int currentDistance = 42_196;
+
+        do {
+            int remainingMeters = totalDistance - currentDistance;
+
+            System.out.println("Держитесь! Осталось " + remainingMeters + " метров");
+            currentDistance += 500;
+        } while (currentDistance <= totalDistance);
+
+        for (; currentDistance <= totalDistance; currentDistance += 500) {
+            int remainingMeters = totalDistance - currentDistance;
+
+            System.out.println("Держитесь! Осталось " + remainingMeters + " метров");
+        }
+
+        // Задача 3
+        int money = 700;
+        int days = 0;
+
+        while (money >= 100) {
+            days++;
+
+            if (days % 5 == 0) {
+                continue;
+            }
+            money -= 100;
+        } System.out.println("Вы можете оставить автомобиль на " + days + " дней");
+
+        for (; money >= 100; days++){
+
+            if (days % 5 == 0) {
+                continue;
+            }
+
+            money -= 100;
+        } System.out.println("Вы можете оставить автомобиль на " + days + " дней");
+
+        // Задача 4
+        int month = 0;
+        double total = 0;
+        double target = 12_000_000;
+
+        while (true){
+            month++;
+            total += 15000;
+
+            if (month % 6 == 0){
+                total += total * 0.07;
+            }
+
+            System.out.println("Месяц " + month + ". На счете: " + total);
+
+            if (total >= target){
+                break;
+            }
+        }
+        int years = month / 12;
+        int remainingMonths = month % 12;
+
+        System.out.println("Для накопления " + target + " вам понадобится " + month + " месяцев");
+        System.out.println("Это " + years + " лет и " + remainingMonths + " мес.");
+        System.out.println("Ваша итоговая сумма: " + total);
+
+        // Задача 5
+        int charge = 20;
+        int minute = 0;
+        int overheats = 0;
+
+        while (charge < 100){
+            minute++;
+            charge += 2;
+
+            if (minute % 10 == 0){
+                overheats++;
+                minute += 2;
+            }
+
+            if (overheats == 3){
+                System.out.println("Зарядка прекращена. Текущий заряд: " + charge + " %");
+                break;
+            }
+        }
+        System.out.println("Время зарядки составило " + minute + " минут");
     }
 }
