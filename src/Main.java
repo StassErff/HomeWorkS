@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 // Переменные и синтаксис
 public class Main {
     public static void main(String[] args) {
@@ -553,5 +555,71 @@ class HomeWork6 {
             }
         }
         System.out.println("Время зарядки составило " + minute + " минут");
+    }
+}
+
+// Массивы. Комбинация циклов и массивов
+class HomeWork7 {
+    public static void main(String[] args) {
+        // Задача 1
+        int[] num = new int[3];
+        num[0] = 1;
+        num[1] = 2;
+        num[2] = 3;
+
+        double[] numDouble = new double[3];
+        numDouble[0] = 1.57;
+        numDouble[1] = 7.654;
+        numDouble[2] = 9.986;
+
+        int[] home = {56, 34, 95};
+
+        // Задача 2
+        for (int index = 0; index < num.length; index++) {
+            if (index == num.length - 1) {
+                System.out.println(num[index]);
+                break;
+            }
+            System.out.print(num[index] + ", ");
+        }
+
+        for (int index = 0; index < numDouble.length; index++) {
+            if (index == numDouble.length - 1) {
+                System.out.println(numDouble[index]);
+                break;
+            }
+            System.out.print(numDouble[index] + ", ");
+        }
+
+        for (int index = 0; index < home.length; index++) {
+            if (index == home.length - 1) {
+                System.out.println(home[index]);
+                break;
+            }
+            System.out.print(home[index] + ", ");
+        }
+
+        // Задача 3
+        for (int index = num.length - 1; index >= 0; index--) {
+            System.out.print(num[index] + ", ");
+        }
+        System.out.println();
+
+        for (int index = numDouble.length - 1; index >= 0; index--) {
+            System.out.print(numDouble[index] + ", ");
+        }
+        System.out.println();
+
+        for (int index = home.length - 1; index >= 0; index--) {
+            System.out.print(home[index] + ", ");
+        }
+        System.out.println();
+
+        // Задача 4
+        for (int index = 0; index < num.length; index++) {
+            if (num[index] % 2 != 0) {
+                num[index] += 1;
+            }
+        } System.out.println(Arrays.toString(num));
     }
 }
