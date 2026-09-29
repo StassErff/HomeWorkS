@@ -624,3 +624,84 @@ class HomeWork7 {
     }
 }
 
+// Массивы. Сравнение массивов
+class HomeWork8 {
+    public static void main(String[] args) {
+        // Задача 1
+        int[] inputArray1 = {700, 400, 100, 200, 500};
+        double sum = 0;
+        double max = inputArray1[0];
+        double min = inputArray1[0];
+
+        for (int i = 0; i < inputArray1.length; i++) {
+            sum += inputArray1[1];
+            if (inputArray1[i] > max) {
+                max = inputArray1[1];
+            }
+            if (inputArray1[i] < min) {
+                min = inputArray1[i];
+            }
+        }
+
+        double avg = sum / inputArray1.length;
+        double[] outputArray1 = {sum, max, min, avg};
+
+        System.out.println("inputArray1: " + Arrays.toString(inputArray1));
+        System.out.println("outputArray1: " + Arrays.toString(outputArray1));
+
+        // Задача 2
+        int[] inputArray2 = {30000, 50000, 10000, 20000, 7000};
+        double[] outputArray2 = new double[inputArray2.length];
+
+        for (int i = 0; i < inputArray2.length; i++) {
+            outputArray2[i] = inputArray2[i] * 0.13;
+        }
+        System.out.println("inputArray2: " + Arrays.toString(inputArray2));
+        System.out.println("outputArray2: " + Arrays.toString(outputArray2));
+
+        // Задача 3
+        int[] inputArray3 = {1000, 3000, 10000, 4500, 7000};
+        boolean[] outputArray3 = new boolean[inputArray3.length];
+
+        for (int i = 0; i < inputArray3.length; i++) {
+            if (inputArray3[i] >= 5000) {
+                outputArray3[i] = true;
+            } else {
+                outputArray3[i] = false;
+            }
+        }
+
+        System.out.println("inputArray3: " + Arrays.toString(inputArray3));
+        System.out.println("outputArray3: " + Arrays.toString(outputArray3));
+
+        // Задача 4
+        int[] inputArray4 = {900, -100, 500, 700, -10};
+        boolean[] outputArray4 = new boolean[inputArray4.length];
+
+        for (int i = 0; i < inputArray4.length; i++) {
+
+            if (inputArray4[i] >= 0) {
+                outputArray4[i] = true;
+            } else {
+                outputArray4[i] = false;
+                break;
+            }
+        }
+        System.out.println("inputArray4: " + Arrays.toString(inputArray4));
+        System.out.println("outputArray4: " + Arrays.toString(outputArray4));
+
+        // Задача 5
+        int[] inputArray5 = {0, 50, 0, -6, 25};
+        int profitableMonthsCount  = 0;
+
+        for (int i = 0; i < inputArray5.length; i++) {
+
+            if(inputArray5[i] > 0) {
+                profitableMonthsCount++;
+            }
+        }
+        int[] outputArray5 = {profitableMonthsCount};
+        System.out.println("inputArray5: " + Arrays.toString(inputArray5));
+        System.out.println("outputArray5: " + Arrays.toString(outputArray5));
+    }
+}
