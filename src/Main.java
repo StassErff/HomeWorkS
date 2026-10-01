@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Locale;
 
 // Переменные и синтаксис
 public class Main {
@@ -703,5 +704,32 @@ class HomeWork8 {
         int[] outputArray5 = {profitableMonthsCount};
         System.out.println("inputArray5: " + Arrays.toString(inputArray5));
         System.out.println("outputArray5: " + Arrays.toString(outputArray5));
+    }
+}
+
+class HomeWork9 {
+    public static void main(String[] args) {
+        // Задача 1
+        String firstName = "Ivan";
+        String middleName = "Ivanovich";
+        String lastName = "Ivanov";
+        String fullName = firstName + " " + middleName + " " + lastName;
+
+        System.out.println("Ф. И. О. сотрудника — " + fullName);
+
+        // Задача 2
+        String fullName1 = fullName.toUpperCase();
+
+        System.out.println("Данные Ф. И. О. сотрудника для заполнения отчета — " + fullName1);
+
+        // Задача 3
+        String firstName2 = "Иванов";
+        String middleName2 = "Семён";
+        String lastName2 = "Семёнович";
+        String fullName2 = firstName2 + " " + middleName2 + " " + lastName2;
+
+        String fullName3 = fullName2.replace('ё', 'е');
+
+        System.out.println("Данные Ф. И. О. сотрудника — " + fullName3);
     }
 }
