@@ -738,7 +738,7 @@ class HomeWork9 {
 class HomeWork10 {
     public static void main(String[] args) {
         // Задание 1
-        task1(2026);
+        checkLeapYear(2026);
 
         // Задание 2
         task2(1, 2015);
@@ -747,7 +747,7 @@ class HomeWork10 {
         task3(67);
     }
 
-    public static void task1(int year) {
+    public static void checkLeapYear(int year) {
 
         if (year <= 1584) {
             System.out.println("Год должен быть больше 1584");
