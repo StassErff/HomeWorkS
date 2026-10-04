@@ -1,5 +1,4 @@
 import java.util.Arrays;
-import java.util.Locale;
 
 // Переменные и синтаксис
 public class Main {
@@ -741,13 +740,13 @@ class HomeWork10 {
         checkLeapYear(2026);
 
         // Задание 2
-        task2(1, 2015);
+        applicationVersion(1, 2015);
 
         // Задание 3
-        task3(67);
+        deliveryDays(67);
     }
 
-    public static void checkLeapYear(int year) {
+    public static void checkLeapYear (int year) {
 
         if (year <= 1584) {
             System.out.println("Год должен быть больше 1584");
@@ -763,7 +762,7 @@ class HomeWork10 {
         }
     }
 
-    public static void task2(int clientOS, int clientDeviceYear) {
+    public static void applicationVersion (int clientOS, int clientDeviceYear) {
 
         if (clientOS == 0 && clientDeviceYear >= 2015) {
             System.out.println("Установите версию приложения для iOS по ссылке");
@@ -776,7 +775,7 @@ class HomeWork10 {
         }
     }
 
-    public static void task3(int deliveryDistance) {
+    public static void deliveryDays(int deliveryDistance) {
 
         int deliveryDays = 0;
 
