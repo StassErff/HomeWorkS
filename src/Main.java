@@ -1,5 +1,4 @@
 import java.util.Arrays;
-import java.util.Locale;
 
 // Переменные и синтаксис
 public class Main {
@@ -731,5 +730,67 @@ class HomeWork9 {
         String fullName3 = fullName2.replace('ё', 'е');
 
         System.out.println("Данные Ф. И. О. сотрудника — " + fullName3);
+    }
+}
+
+// Методы
+class HomeWork10 {
+    public static void main(String[] args) {
+        // Задание 1
+        checkLeapYear(2026);
+
+        // Задание 2
+        applicationVersion(1, 2015);
+
+        // Задание 3
+        deliveryDays(67);
+    }
+
+    public static void checkLeapYear (int year) {
+
+        if (year <= 1584) {
+            System.out.println("Год должен быть больше 1584");
+        } else {
+            boolean leapYear = year % 4 == 0;
+            boolean leapYear2 = year % 100 != 0 || year % 400 == 0;
+
+            if (leapYear && leapYear2) {
+                System.out.println(year + " год является високосным");
+            } else {
+                System.out.println(year + " год не является високосным");
+            }
+        }
+    }
+
+    public static void applicationVersion (int clientOS, int clientDeviceYear) {
+
+        if (clientOS == 0 && clientDeviceYear >= 2015) {
+            System.out.println("Установите версию приложения для iOS по ссылке");
+        } else if (clientOS == 1 && clientDeviceYear >= 2015) {
+            System.out.println("Установите версию приложения для Android по ссылке");
+        } else if (clientOS == 0 && clientDeviceYear < 2015) {
+            System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+        } else {
+            System.out.println("Установите облегченную версию приложения для Android по ссылке");
+        }
+    }
+
+    public static void deliveryDays(int deliveryDistance) {
+
+        int deliveryDays = 0;
+
+        if (deliveryDistance <= 20) {
+            deliveryDays = 1;
+        } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
+            deliveryDays = 2;
+        } else if (deliveryDistance > 60 && deliveryDistance <= 100) {
+            deliveryDays = 3;
+        }
+
+        if (deliveryDays > 0) {
+            System.out.println("Потребуется дней: " + deliveryDays);
+        } else {
+            System.out.println("Доставки нет.");
+        }
     }
 }
