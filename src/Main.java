@@ -810,7 +810,7 @@ class HomeWork11 {
         System.out.println("uells.getYearOfPublication() = " + uells.getYearOfPublication());
 
         System.out.println("iyerusalim.getAppellation() = " + iyerusalim.getAppellation());
-        System.out.println("iyerusalim.getAuthor() = " + iyerusalim.getAuthor());
+        System.out.println("iyerusalim.getAuthor() = " + iyerusalim.getAuthor().getName() + " " + iyerusalim.getAuthor().getSurname());
         System.out.println("iyerusalim.getYearOfPublication() = " + iyerusalim.getYearOfPublication());
     }
 }
