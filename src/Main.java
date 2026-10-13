@@ -794,3 +794,23 @@ class HomeWork10 {
         }
     }
 }
+
+// Объекты и классы
+class HomeWork11 {
+    public static void main(String[] args) {
+        Author dmitriDal = new Author("Дмитрий", "Даль");
+        Book uells = new Book("Уэллс. Горький ветер", dmitriDal, 2021);
+        uells.setYearOfPublication(2022);
+
+        Author alanMur = new Author("Алан", "Мур");
+        Book iyerusalim = new Book("Иерусалим", alanMur, 2023);
+
+        System.out.println("uells.getAppellation() = " + uells.getAppellation());
+        System.out.println("uells.getAuthor() = " + uells.getAuthor().getName() + " " + uells.getAuthor().getSurname());
+        System.out.println("uells.getYearOfPublication() = " + uells.getYearOfPublication());
+
+        System.out.println("iyerusalim.getAppellation() = " + iyerusalim.getAppellation());
+        System.out.println("iyerusalim.getAuthor() = " + iyerusalim.getAuthor().getName() + " " + iyerusalim.getAuthor().getSurname());
+        System.out.println("iyerusalim.getYearOfPublication() = " + iyerusalim.getYearOfPublication());
+    }
+}
