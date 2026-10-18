@@ -814,3 +814,37 @@ class HomeWork11 {
         System.out.println("iyerusalim.getYearOfPublication() = " + iyerusalim.getYearOfPublication());
     }
 }
+
+// Методы класса object
+
+class HomeWrk12 {
+    public static void main(String[] args) {
+        Product chips = new Product(123, "Chips", 40, "Snacks");
+        Product cookies = new Product(234, "Cookies", 58, "Confectionery");
+        Product copiCookies = new Product(234, "Cookies", 58, "Confectionery");
+
+        System.out.println(chips);
+        System.out.println(cookies);
+        System.out.println(copiCookies);
+
+        System.out.println("chips == cookies? " + chips.equals(cookies));
+        System.out.println("chips == copiCookies? " + chips.equals(copiCookies));
+        System.out.println("cookies == copiCookies? " + cookies.equals(copiCookies));
+
+        Product[] basket1 = {chips, cookies};
+        Product[] basket2 = {copiCookies, cookies};
+        Product[] basket3 = {cookies, chips};
+
+        Order order1 = new Order("Гриша", basket1);
+        Order order2 = new Order("Миша", basket2);
+        Order order3 = new Order("Вася", basket3);
+
+        System.out.println("Заказ 1: " + order1);
+        System.out.println("Заказ 2: " + order2);
+        System.out.println("Заказ 3: " + order3);
+
+        System.out.println("order1 == order2? " + order1.equals(order2));
+        System.out.println("order1 == order3? " + order1.equals(order3));
+        System.out.println("order2 == order3? " + order2.equals(order3));
+    }
+}
